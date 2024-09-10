@@ -5,7 +5,7 @@ Step 1: Clone the Repository
 
 Begin by cloning the repository to your local machine using the following command:
 
-git clone git@gitlab.com:hackathon20241/legalaid.git
+git clone git@github.com:Tandin-Dorji-ikigai/legalaids.git
 
 Step 2: Install Dependencies
 
