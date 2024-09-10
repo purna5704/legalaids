@@ -1,0 +1,109 @@
+.service-section {
+    background-color: #FFFFFF;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+  }
+  
+  .service-content-container {
+    width: 80%;
+    margin: 0 auto;
+    height: 90%;
+  }
+  
+  .service-content-container h1 {
+    font-weight: bold;
+    margin-bottom: 1%;
+  }
+  
+  .service-content-container .accordion-container {
+    height: 91%;
+    position: relative;
+    transition: all 0.5s ease;
+  }
+  
+  .accordion-container .horizontal-line {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 100%;
+    background: #48C482;
+  }
+  
+  .accordion-contents {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+  }
+  
+  .accordion-item {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .accordion-item .topic {
+    font-size: clamp(18px, 3vw, 28px);
+    font-weight: bold;
+    position: relative;
+    margin-left: 4%;
+  }
+  
+  .accordion-item::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    background: #000000;
+    width: 92%;
+    top: -10px;
+    left: 4%;
+  }
+  
+  .accordion-item .circle {
+    height: 40px;
+    width: 40px;
+    background: #FFFFFF;
+    border-radius: 50%;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid #234835;
+  }
+  
+  .accordion-item.toggled .circle {
+    background: #234835;
+    border: 5px solid #FFFFFF;
+    transition: all 0.3s ease;
+  }
+  
+  .accordion-icon {
+    font-size: 40px;
+    margin-right: 4%;
+  }
+  
+  .accordion-contents .answer {
+    margin: 0.5% 4%;
+    margin-bottom: 3%;
+    font-size: clamp(14px, 3vw, 20px);
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.5s cubic-bezier(0,1,0,1);
+
+  }
+  
+  .accordion-contents .answer.show {
+    max-height: 1000px;
+    opacity: 1;
+    transition: all 0.5s cubic-bezier(1,0,1,0);
+  }
