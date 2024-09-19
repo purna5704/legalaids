@@ -10,7 +10,7 @@ import "./css/legal.css";
 function LegalIssues() {
   return (
     <>
-      {/* <NavBar currentPage="legal" /> */}
+      <NavBar currentPage="legal" />
       <div className="Home-banner-wrapper">
         <div className="banner">
           <div className="banner-content">
@@ -70,8 +70,8 @@ function LegalIssues() {
 
       <div className="whitespace"></div>
 
-      {/* <div className="eligible-wrapper">
-        <img src={EligibleImg} alt="" /> 
+      <div className="eligible-wrapper">
+        <img src={EligibleImg} alt="" />
         <div className="eligible-content-wrapper">
           <div className="main-eligible">
             <p>Who is Eligible?</p>
@@ -95,7 +95,7 @@ function LegalIssues() {
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
 
       <div class="legal-grid-container">
         <div class="legal-grid-item legal-grid-item1">
@@ -144,7 +144,7 @@ function LegalIssues() {
         </div>
       </div>
       <div className="whitespace"></div>
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }
