@@ -279,8 +279,14 @@
   .service-subtopic {
     font-size: small;
   }
-  .banner-topic{
+  .banner-topic {
     text-align: center;
     padding: 0;
+  }
+  .banner-topic {
+    font-size: clamp(55px, 3vw, 64px);
+  }
+  .eligible-content-wrapper {
+    padding: 10px 20px;
   }
 }
