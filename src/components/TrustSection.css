@@ -1,48 +1,105 @@
 .trust-section {
-    background-color: #f5f5f5;
-    padding: 40px;
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .trust-content {
-    display: flex;
-    align-items: center;
-  }
-  
-  .image-container {
-    left: 100px;
-    width: 40%;
-    position: relative;
-  }
+  background-color: #f5f5f5;
+  padding: 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+.trust-content {
+  display: flex;
+  align-items: center;
+}
+
+.image-container {
+  left: 100px;
+  width: 40%;
+  position: relative;
+}
+
+.image-container::before {
+  content: "";
+  position: absolute;
+  bottom: -50%;
+  left: -50%;
+  width: 100%;
+  height: 130%;
+  background-color: #006d5b;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.trust-image {
+  width: 100%;
+  border-radius: 10px;
+  position: relative;
+  z-index: 2;
+}
+
+.trust-text {
+  width: 45%;
+  color: #006d5b;
+  padding: 20px;
+  border-radius: 10px;
+  margin-left: 150px;
+  position: relative;
+  z-index: 3;
+  font-weight: 700;
+  font-size: clamp(16px, 3vw, 24px);
+}
+
+@media (max-width: 896px) {
+  /* .image-container::before {
+    bottom: 10%;
+    left: -75%;
+    width: 125%;
+    height: 160%;
+  } */
   
   .image-container::before {
-    content: '';
-    position: absolute;
-    bottom: -50%;
+    bottom: -30%;
+    left: -80%;
+    width: 140%;
+    height: 140%;
+  }
+  .trust-content{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .trust-image {
+    margin-left: -75px;
+    width: 130%;
+  }
+
+}
+
+@media (max-width: 799px) {
+  .trust-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .image-container {
+    left: 0;
+    width: 100%;
+  }
+
+  .image-container::before {
+    bottom: -3%;
     left: -50%;
     width: 100%;
-    height: 130%;
-    background-color: #006d5b;
-    border-radius: 50%;
-    z-index: 1;
+    height: 135%;
   }
-  
+
   .trust-image {
+    margin-left: 0;
     width: 100%;
-    border-radius: 10px;
-    position: relative;
-    z-index: 2;
+    height: 50%;
   }
-  
+
   .trust-text {
-    width: 45%;
-    color: #006d5b;
-    padding: 20px;
-    border-radius: 10px;
-    margin-left: 150px;
-    position: relative;
-    z-index: 3;
-    font-weight: 700;
-    font-size: 22px;
+    width: 100%;
+    font-weight: 500;
+    margin-left: 0;
+    padding: 0;
   }
+}

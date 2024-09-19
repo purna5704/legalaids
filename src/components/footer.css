@@ -1,131 +1,144 @@
-.footer-wrapper{
-    height: auto;
-    width: 100%;
-    background: #1F1F1E;
+.footer-wrapper {
+  height: auto;
+  width: 100%;
+  background: #1f1f1e;
 }
 
-.footer-black-space{
-    height: 10vh;
-    background: #1F1F1E;
+.footer-black-space {
+  height: 10vh;
+  background: #1f1f1e;
 }
 
-.footer-box{
-    height: 140px;
-    width: 90%;
-    background: #F1ECE4;
-    margin: 0 auto;
-    border-radius: 10px;
-    justify-content: space-between;
-    display: flex;
-    align-items: center;
-    padding: 0 60px;
+.footer-box {
+  height: 140px;
+  width: 90%;
+  background: #f1ece4;
+  margin: 0 auto;
+  border-radius: 10px;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  padding: 0 60px;
 }
 
 .footer-btn {
-    background-color: #1F1F1E;
-    width: 310px;
-    height: 55px;
-    border-radius: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    font-size: clamp(16px, 3vw, 20px);
-    color: #FFFFFF;
-    border: 1px solid #FFFFFF;
-    transition: 0.3s ease-in-out;
-    gap: 10px;
+  background-color: #1f1f1e;
+  width: 310px;
+  height: 55px;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: clamp(16px, 3vw, 20px);
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  transition: 0.3s ease-in-out;
+  gap: 10px;
 }
 
-.footer-btn:hover{
-    background-color: #FFFFFF;
-    color: #1F1F1E;
-    border: 1px solid #1F1F1E;
+.footer-btn:hover {
+  background-color: #ffffff;
+  color: #1f1f1e;
+  border: 1px solid #1f1f1e;
 }
 
-.footer-btn:hover .footer-line{
-    background: #1F1F1E;
+.footer-btn:hover .footer-line {
+  background: #1f1f1e;
 }
-.box-title{
-    font-size: clamp(34px,3vw,40px);
-    font-weight: bolder;
-    color: #000000;
-}
-
-.footer-btn
-.footer-line{
-    width: 45px;
-    height: 2px;
-    background: #FFFFFF;
-    border: 2px;
-    transition: all 0.3s ease-in-out;
+.box-title {
+  font-size: clamp(34px, 3vw, 40px);
+  font-weight: bolder;
+  color: #000000;
 }
 
-
+.footer-btn .footer-line {
+  width: 45px;
+  height: 2px;
+  background: #ffffff;
+  border: 2px;
+  transition: all 0.3s ease-in-out;
+}
 
 #footer-navLinks {
-    flex-grow: 1;
-    margin: 20px 0;
+  flex-grow: 1;
+  margin: 20px 0;
 }
 
 #footer-navLinks ul {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #footer-navLinks li {
-    list-style: none;
-    padding: 0 20px;
-    position: relative;
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
 }
-
 
 #footer-navLinks li a {
-    text-decoration: none;
-    font-size: clamp(16px, 3vw, 20px);
-    font-weight: 600px;
-    color: #FFFFFF;
-    transition: 0.3s ease-in-out;
+  text-decoration: none;
+  font-size: clamp(16px, 3vw, 20px);
+  font-weight: 600px;
+  color: #ffffff;
+  transition: 0.3s ease-in-out;
 }
 
-
 #footer-navLinks li a::after {
-    content: "";
-    width: 0; 
-    height: 2px;
-    background-color: #15605C;
-    position: absolute;
-    bottom: -4px;
-    left: 20px; 
-    transition: width 0.3s ease-in-out; 
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: #15605c;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+  transition: width 0.3s ease-in-out;
 }
 
 #footer-navLinks li a:hover::after {
-    width: 40%; 
+  width: 40%;
 }
 
 #footer-navLinks li a:hover,
 #footer-navLinks li a.active,
-.navprofile .navIcon:hover
-{
-    color: #15605C;
-    transition: 0.3s ease-in-out;
+.navprofile .navIcon:hover {
+  color: #15605c;
+  transition: 0.3s ease-in-out;
 }
 
 .navBtns {
-    display: flex;
-    column-gap: 20px;
-    align-items: center;
-    
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
 }
 
-.copyright{
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    color: #F1ECE4;
-    font-size: clamp(14px,3vw,16px);
-    height: 40px;
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  color: #f1ece4;
+  font-size: clamp(14px, 3vw, 16px);
+  height: 40px;
 }
 
+@media (max-width: 686px) {
+  .footer-black-space {
+    height: 3vh;
+    background: #1f1f1e;
+  }
+
+  .footer-box {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 410px) {
+    #footer-navLinks li {
+        padding: 0 8px;
+      }
+}

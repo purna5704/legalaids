@@ -4,6 +4,7 @@ import "./css/apply.css";
 import { MdExpandMore } from "react-icons/md";
 import { FaSearch } from "react-icons/fa";
 import { useGetCaseQuery } from "../slices/caseApiSlice";
+import Footer from "../components/Footer";
 
 function TrackApplication() {
   const [ID, setID] = useState("");
@@ -183,6 +184,7 @@ function TrackApplication() {
         </div>
       )}
       <p className="copyright-sigup">&copy; 2024 Bhutan Legal Aid Center</p>
+      <Footer />
     </>
   );
 }
