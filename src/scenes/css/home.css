@@ -55,6 +55,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 1rem;
 }
 
 .banner .banner-content,
@@ -174,7 +175,7 @@
   align-items: center;
   flex-direction: column;
   height: auto;
-  margin-top: -5rem;
+  margin-top: 0;
 }
 
 .service-topic {
@@ -441,9 +442,6 @@
     width: 100%;
   }
 
-.service-wrapper {
-  margin-top: -15rem;
-}
 }
 
 @media (max-width: 1010px) {
@@ -513,7 +511,7 @@
     height: 90vh;
     width: 90vh;
     top: 10%;
-    right: -105%;
+    right: -100%;
   }
 
   .banner-topic {
@@ -552,8 +550,8 @@
   .banner-circle {
     height: 80vh;
     width: 80vh;
-    top: 5%;
-    right: -130%;
+    top: 10%;
+    right: -120%;
   }
 
   .banner {
@@ -621,7 +619,7 @@
   .banner-circle {
     height: 50vh;
     width: 50vh;
-    top: 5%;
-    right: -100%;
+    top: 1%;
+    right: -70%;
   }
 }
