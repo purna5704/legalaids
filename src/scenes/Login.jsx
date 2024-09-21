@@ -7,7 +7,10 @@ import { useDispatch } from "react-redux";
 import { setCredentials } from "../slices/authSlice";
 import { useNavigate } from "react-router-dom";
 import { useLoginMutation } from "../slices/authApiSlice";
+import NavBar from "../components/Nav";
+import Footer from "../components/Footer";
 import Swal from "sweetalert2";
+import { Nav } from "rsuite";
 
 function Login() {
   const [cid, setCID] = useState("");
@@ -69,11 +72,12 @@ function Login() {
 
   return (
     <>
-      <div className="signup-nav">
+      {/* <div className="signup-nav">
         <Link to="/home">
           <img src={Logo} alt="Logo" />
         </Link>
-      </div>
+      </div> */}
+      <NavBar />
       <div className="signup-wrapper login-wrapper">
         <div className="signup-form-container">
           <form onSubmit={handleSubmit}>
@@ -127,6 +131,7 @@ function Login() {
         </div>
       </div>
       <p className="copyright-login">&copy; 2024 Bhutan Legal Aid Center</p>
+      <Footer />
     </>
   );
 }
