@@ -150,7 +150,7 @@ function Apply3() {
               <div className="banner-cta">
                 Apply
                 <div className="icon-container">
-                  <MdExpandMore className="expand-more" />
+                  <MdExpandMore className="exapnd-more" />
                 </div>
               </div>
             </button>

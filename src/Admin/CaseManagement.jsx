@@ -4,7 +4,7 @@ import "./css/CaseManagement.css";
 import DetailsPopup from "../components/DetailsPopup";
 import Modal from "@mui/material/Modal";
 import { useGetAllCaseQuery } from "../slices/caseApiSlice";
-import { CaseSensitive } from "lucide-react";
+// import { CaseSensitive } from "lucide-react";
 
 function CaseManagement() {
   const [activeStatus, setActiveStatus] = useState("All Application");

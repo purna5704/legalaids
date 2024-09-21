@@ -91,7 +91,7 @@ function Apply1() {
                 <div className="apply-tab">
                     <Link className='tab-current' to="#">Applicant Information and Details</Link>
                     <Link className='mid-tab' to="#">Institutions facilitating legal aid applications</Link>
-                    <Link to="#">Check List of Documents</Link>
+                    <Link className='last-tab' to="#">Check List of Documents</Link>
                 </div>
 
                 <div className="form-wrapper">
@@ -232,6 +232,7 @@ function Apply1() {
                                         </option>
                                     ))}
                                 </select>
+
                             </div>
 
                             <div className="legal-form-row">
@@ -242,6 +243,8 @@ function Apply1() {
                                     onChange={handleChange}
                                     required
                                     disabled={!formData.pgewog}
+
+                                    
                                 >
                                     <option value="">Select Village</option>
                                     {villages[formData.pgewog]?.map((village) => (
