@@ -32,6 +32,19 @@
     height: 200vh;
 } */
 
+/* .container {
+  max-width: 1680px; 
+  margin: 0 auto;     
+}
+
+.service-wrapper, .process-wrapper {
+  padding: 50px 0; 
+}
+
+.service-container, .process-content-container {
+  width: 100%; 
+} */
+
 .Home-banner-wrapper {
   height: 110vh;
   position: relative;
@@ -363,6 +376,10 @@
 }
 
 @media (max-width: 1342px) {
+  .banner {
+    margin-top: 15%;
+  }
+
   .banner-circle {
     height: 100vh;
     width: 100vh;
@@ -623,3 +640,8 @@
     right: -70%;
   }
 }
+
+
+
+
+
