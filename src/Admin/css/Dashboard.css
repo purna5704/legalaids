@@ -288,6 +288,7 @@
   }
   .stats-card-container {
     height: 11rem;
+    flex-wrap: wrap;
   }
 
   .stats-card {
@@ -333,13 +334,14 @@
 
 @media (max-width: 805px) {
   .stats-card-container {
-    overflow-x: auto;
+    /* overflow-x: auto; */
     white-space: nowrap;
     width: 100%;
+    height: auto;
     padding: 1rem 0;
   }
 
-  .stats-card-container::-webkit-scrollbar {
+  /* .stats-card-container::-webkit-scrollbar {
     height: 0.7rem;
   }
 
@@ -350,5 +352,5 @@
 
   .stats-card-container::-webkit-scrollbar-track {
     background: #f0f0f0;
-  }
+  } */
 }
