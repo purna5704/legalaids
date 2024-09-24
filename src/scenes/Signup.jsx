@@ -6,6 +6,8 @@ import Logo from "../assets/logo.png";
 import { usePostUserMutation } from "../slices/userApiSlice";
 import { useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
+import NavBar from '../components/Nav';
+import Footer from "../components/Footer";
 
 function Signup() {
   const [postUser] = usePostUserMutation();
@@ -105,11 +107,12 @@ function Signup() {
 
   return (
     <>
-      <div className="signup-nav">
+      {/* <div className="signup-nav">
         <Link to="/home">
           <img src={Logo} alt="" />
         </Link>
-      </div>
+      </div> */}
+      <NavBar currentPage="Sign-up" />
       <div className="signup-wrapper">
         <div className="signup-form-container">
           <form onSubmit={handleSubmit}>
@@ -212,6 +215,7 @@ function Signup() {
           <p className="copyright-sigup">&copy; 2024 Bhutan Legal Aid Center</p>
         </div>
       </div>
+      <Footer/>
     </>
   );
 }
