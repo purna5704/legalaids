@@ -58,7 +58,7 @@
   border-radius: 50%;
   background-color: #15605c;
   top: 40%;
-  right: -40%;
+  right: -50%;
   transform: translate(-50%, -50%);
 }
 
@@ -171,8 +171,7 @@
 }
 
 .banner-image {
-  justify-content: flex-end !important;
-  margin-right: 4.5rem;
+  justify-content: flex-start !important;
 }
 
 .banner-img-wrapper img {
@@ -205,7 +204,6 @@
 .service-container {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
   align-items: center;
   gap: 30px;
   height: auto;
@@ -291,7 +289,7 @@
 
 .process-content-container {
   height: 100%;
-  width: 85%;
+  width: 80%;
   margin: 50px auto;
 }
 
@@ -309,13 +307,12 @@
 }
 
 .steps-container .steps-content {
-  /* height: 180px; */
+  height: 180px;
   width: 100%;
   border-top: 2px solid #000000;
 }
 
 .steps-content {
-  margin-bottom: 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -342,7 +339,6 @@
 }
 
 .steps-des-topic {
-  margin: 20px 0;
   font-size: clamp(24px, 3vw, 28px);
   font-weight: bold;
 }
