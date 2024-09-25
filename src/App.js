@@ -24,10 +24,6 @@ import DetailsPopup from './components/DetailsPopup';
 import CurrentCases from './Lawyer/CurrentCases';
 import History from './Lawyer/History';
 import AdminLogin from './scenes/AdminLogin';
-import ProtectedUserRoute from './ProtectUserRoute';
-import ProtectedAdminRoute from './ProtectAdminRoute';
-import ProtectedLawyerRoute from './ProtectLawyerRoute';
-
 
 function App() {
   const location = useLocation();
@@ -36,8 +32,6 @@ function App() {
     return adminRoutes.some(route => pathname.startsWith(route));
   };
   const showCursor = !isAdminRoute(location.pathname);
-  // const showBot = !isAdminRoute(location.pathname);
-
 
   function ScrollToTop() {
     const { pathname } = useLocation();
@@ -66,30 +60,26 @@ function App() {
           <Route path='/signup' element={<Signup />} />
           <Route path='/otp' element={<Otp />} />
           <Route path='/track' element={<TrackApplication />} />
-          {/* <Route path="/apply1" element={<ProtectedUserRoute><Apply1 /></ProtectedUserRoute>} />
-          <Route path="/apply2" element={<ProtectedUserRoute><Apply2 /></ProtectedUserRoute>} />
-          <Route path="/apply3" element={<ProtectedUserRoute><Apply3 /></ProtectedUserRoute>} /> */}
           <Route path="/apply1" element={<Apply1 />} />
           <Route path="/apply2" element={<Apply2 />} />
           <Route path="/apply3" element={<Apply3 />} />
 
           {/* admin route */}
           <Route path='/adminLogin' element={<AdminLogin />} />
-
-          <Route path='/dashboard' element={<ProtectedAdminRoute><Dashboard /></ProtectedAdminRoute>} />
-          <Route path='/employeeManagement' element={<ProtectedAdminRoute><EmployeeManagement /></ProtectedAdminRoute>} />
-          <Route path='/caseManagement' element={<ProtectedAdminRoute><CaseManagement /></ProtectedAdminRoute>} />
-          <Route path='/applicationManagement' element={<ProtectedAdminRoute><ApplicationManagement /></ProtectedAdminRoute>} />
-          <Route path='/dataManagement' element={<ProtectedAdminRoute><DataManagement /></ProtectedAdminRoute>} />
-          <Route path='/detailspopup' element={<ProtectedAdminRoute><DetailsPopup /></ProtectedAdminRoute>} />
+          <Route path='/dashboard' element={<Dashboard />} />
+          <Route path='/employeeManagement' element={<EmployeeManagement />} />
+          <Route path='/caseManagement' element={<CaseManagement />} />
+          <Route path='/applicationManagement' element={<ApplicationManagement />} />
+          <Route path='/dataManagement' element={<DataManagement />} />
+          <Route path='/detailspopup' element={<DetailsPopup />} />
 
           {/* lawyer route */}
-          <Route path='/currentcases' element={<ProtectedLawyerRoute><CurrentCases /></ProtectedLawyerRoute>} />
-          <Route path='/history' element={<ProtectedLawyerRoute><History /></ProtectedLawyerRoute>} />
+          <Route path='/currentcases' element={<CurrentCases />} />
+          <Route path='/history' element={<History />} />
         </Routes>
       </main>
     </div>
   );
 }
 
-export default App
+export default App;

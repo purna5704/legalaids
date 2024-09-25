@@ -162,3 +162,13 @@
     width: 100%;
     border: 1px solid lightgrey;
 }
+
+@media (max-width: 1050px) {
+    .lawyer-form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .lawyer-document-list {
+        grid-template-columns: 1fr;
+    }
+  }

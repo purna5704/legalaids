@@ -90,3 +90,38 @@
   width: 100%;
   height: 100%;
 }
+
+@media (max-width: 730px) {
+  .file-btn-container{
+    width: 100%;
+    column-gap: 95px;
+  }
+
+  .file-upload-btn-container{
+    width: 30%;
+  }
+  .file-upload-btn-container button{
+    width: 150%;
+  }
+
+}
+@media (max-width: 670px) {
+  .file-btn-container{
+    column-gap: 80px;
+  }
+
+}
+
+@media (max-width: 580px) {
+  .file-btn-container{
+    column-gap: 70px;
+  }
+
+}
+
+@media (max-width: 540px) {
+  .file-btn-container{
+    column-gap: 50px;
+  }
+
+}
