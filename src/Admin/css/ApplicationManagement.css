@@ -83,3 +83,50 @@
     background-color: #f2f2f2; /* Light background for headers */
   }
   
+  @media (max-width: 1198px) {
+    
+    .statistical-overview {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .additional-charts-row {
+      overflow-x: hidden;
+    }
+  
+    .stats-card {
+      flex: 1 1 calc(50% - 16px);
+    }
+  
+    .stats-card {
+      height: 100%;
+    }
+  }
+  
+  @media (max-width: 805px) {
+    /* .statistical-overview {
+      flex-direction: column;
+      width: 100%;
+    } */
+  
+    .stats-card {
+      flex: 1 1 100%;
+      width: 100%; 
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .applications-filters{
+      flex-direction: column;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .filter-section {
+      width: 100%;
+      display: flex;
+      gap: 0.5rem;
+  }
+  }
+  
+  
